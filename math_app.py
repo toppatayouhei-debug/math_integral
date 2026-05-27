@@ -36,7 +36,7 @@ def load_math_data(file_path):
         return [{"q": "Error", "a": f"ファイルの読み込みに失敗しました: {e}", "no": "❌", "hint": ""}]
 
 # タイトル
-st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📐 積分解法フラッシュカード</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #2c3e50;'>📚積分解法フラッシュカード</h1>", unsafe_allow_html=True)
 
 # ファイル選択ドロップダウン
 math_options = get_math_files()
@@ -53,7 +53,7 @@ st.components.v1.html(f"""
     <div id="study-app" style="font-family: sans-serif; color: #444; max-width: 550px; margin: auto;">
         
         <div style="text-align: center; font-weight: bold; color: #7f8c8d; margin-bottom: 15px; font-size: 14px;">
-            🧠 積分の方針がパッと頭に浮かぶかトレーニング！
+            😋方針が即答できるところまで仕上げよう。
         </div>
 
         <div style="display: flex; gap: 8px; margin-bottom: 20px; justify-content: center;">
