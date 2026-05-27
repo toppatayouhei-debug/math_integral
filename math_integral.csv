@@ -1,4 +1,134 @@
 問題,解答,問題番号,ヒント
-$$\int (x^3+3x^2+3x+1) dx$$,$$\frac{(x+1)^4}{4} + C$$,類題 38 [1],$$x^3+3x^2+3x+1 = (x+1)^3$$ 1次式のカタマリ
-$$\int (x^2+2x+3)(x+1) dx$$,$$\frac{1}{4}(x^2+2x+3)^2 + C$$,類題 31 [1],微分すると $$(x^2+2x+3)(x+1)$$ になるカタマリを探す
-$$\int (2x+1)^3 dx$$,$$\frac{(2x+1)^4}{8} + C$$,31 例題 (1),$$2x+1$$ を1つの1次式のカタマリとみる
+$$\int (x^3+3x^2+3x+1) dx$$,$$\frac{(x+1)^4}{4} + C$$,1,$$x^3+3x^2+3x+1 = (x+1)^3$$ 1次式のカタマリ
+$$\int (x^2+2x+3)(x+1) dx$$,$$\frac{1}{4}(x^2+2x+3)^2 + C$$,2,微分すると $$(x^2+2x+3)(x+1)$$ になるカタマリを探す
+$$\int (2x+1)^3 dx$$,$$\frac{(2x+1)^4}{8} + C$$,3,$$2x+1$$ を1つの1次式のカタマリとみる
+$$\int_0^1 (x^2+1)^3 dx$$,$$\frac{96}{35}$$,4,$$(x^2+1)^3 = x^6 + 3x^4 + 3x^2 + 1$$
+$$\int x(x^2+1)^3 dx$$,$$\frac{(x^2+1)^4}{8} + C$$,5,$$x(x^2+1)^3$$ を微分する
+$$\int_3^5 x(x-3)^2 dx$$,$$12$$,6,$$x(x-3)^2 = (x-3)^3 + 3(x-3)^2$$
+$$\int_{\alpha}^{\beta} (x-\alpha)^3(\beta-x)^2 dx$$,$$\frac{1}{60}(\beta-\alpha)^6$$,7,部分積分法を2回 or $$x-\alpha$$ について整理
+$$\int x^2(x^3+1)^4 dx$$,$$\frac{1}{15}(x^3+1)^5 + C$$,8,$$x^2(x^3+1)^4$$ を微分する
+$$\int_0^{\frac{1}{2}} x(1-2x)^n dx$$ $$(n は自然数)$$,$$\frac{1}{4(n+1)(n+2)}$$,9,$$t = 1-2x$$ とおくと $$x = \frac{1-t}{2}$$
+$$\int_1^2 \frac{1}{x} dx$$,$$\log 2$$,10,$$(\log |x|)' = \frac{1}{x}$$
+$$\int \frac{dx}{x^2}$$,$$-\frac{1}{x} + C$$,11,$$(\frac{1}{x})' = -\frac{1}{x^2}$$
+$$\int_2^3 \frac{1}{1-x} dx$$,$$-\log 2$$,12,$$\frac{1}{1-x}$$ 1次式のカタマリ
+$$\int \frac{\sin x}{\cos^2 x + 4\sin^2 x} dx$$,$$\frac{1}{4\sqrt{3}}\log\frac{2-\sqrt{3}\cos x}{2+\sqrt{3}\cos x} + C$$,13,$$\frac{\sin x}{4-3\cos^2 x}$$ に変形して微分形を探す
+$$\int_0^{\frac{\pi}{4}} \frac{(1+\tan x)^3}{\cos^2 x} dx$$,$$\frac{15}{4}$$,14,$$(1+\tan x)^3 \cdot \frac{1}{\cos^2 x}$$ 微分するとカタマリになる形
+$$\int_0^{\pi} \sqrt{1+\cos x} dx$$,$$2\sqrt{2}$$,15,$$\sqrt{2\cos^2 \frac{x}{2}} = \sqrt{2}\cos \frac{x}{2}$$ 半角の公式を利用
+$$\int_0^{\frac{\pi}{2}} \frac{\cos x}{\sqrt{1+\sin x}} dx$$,$$2(\sqrt{2}-1)$$,16,$$\frac{\cos x}{\sqrt{1+\sin x}}$$ カタマリを微分する形
+$$\int_{\frac{\pi}{6}}^{\frac{\pi}{2}} \frac{\cos \theta}{\sqrt{1+2\sin \theta}} d\theta$$,$$\sqrt{3}-\sqrt{2}$$,17,$$\frac{\cos \theta}{\sqrt{1+2\sin \theta}}$$ カタマリを微分する形
+$$\int_0^{\frac{\pi}{2}} e^{-x} \cos 2x dx$$,$$\frac{1}{5}(1+e^{-\frac{\pi}{2}})$$,18,部分積分法を2回使って同型出現の方程式を作る
+$$\int e^x \cos x dx$$,$$\frac{1}{2}e^x(\cos x + \sin x) + C$$,19,部分積分法を2回使って方程式を作る
+$$\int e^{2x} \sin 3x dx$$,$$\frac{1}{13}e^{2x}(2\sin 3x - 3\cos 3x) + C$$,20,部分積分法を2回使って方程式を作る
+$$\int (\sin x + \cos x) e^{-x} dx$$,$$-e^{-x}\cos x + C$$,21,$$(e^{-x}\cos x)' = -e^{-x}\cos x - e^{-x}\sin x$$ の関係を利用
+$$\int \cos^3 x dx$$,$$\sin x - \frac{\sin^3 x}{3} + C$$ または $$\frac{3}{4}\sin x + \frac{1}{12}\sin 3x + C$$,22,$$(1-\sin^2 x)\cos x$$ に変形して微分形を探す、または3倍角の公式利用
+$$\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}} (x^2 - \sin x) dx$$,$$\frac{\cos^3 \theta}{3} - \cos \theta + C$$,23,$$\sin^3 \theta = (1-\cos^2 \theta)\sin \theta$$ に変形して微分形を探す
+$$\int_0^{\frac{\pi}{3}} (\cos x - 2\sin x) dx$$,$$\frac{8}{15}$$,24,$$(\cos^2 x)^2\cos x = (1-\sin^2 x)^2\cos x$$ に変形して微分形を探す
+$$\int (\cos x - x\sin x) dx$$,$$\frac{3}{16}\pi$$,25,$$\left(\frac{1+\cos 2x}{2}\right)^2 = \frac{1}{4}(1+2\cos 2x + \frac{1+\cos 4x}{2})$$ 半角・倍角で次数を下げる
+$$\int_0^{\pi} (1+\cos \theta)^2 d\theta$$,$$-\frac{1}{3}\cos^3 \theta + C$$,26,$$\cos^2 \theta \sin \theta$$ カタマリを微分する形
+$$\int_0^{\pi} (\sin \theta + \cos \theta)^2 d\theta$$,$$\tan x + \frac{\tan^3 x}{3} + C$$,27,$$\frac{1}{\cos^4 x} = (1+\tan^2 x) \cdot \frac{1}{\cos^2 x}$$ に変形して微分形を探す
+$$\int_0^{\pi} \left(\sin x - \frac{1}{2}\sin 2x\right)^2 dx$$,$$\frac{1}{8}\left(\theta - \frac{1}{4}\sin 4\theta\right) + C$$,28,$$\frac{1}{4}\sin^2 2\theta = \frac{1}{8}(1-\cos 4\theta)$$ 倍角の公式で次数を下げる
+$$\int (\sin^4 \theta + \cos^4 \theta) d\theta$$,$$\frac{1}{4}\sin 2\theta - \frac{1}{32}\sin 8\theta - \frac{1}{16}\sin 4\theta + C$$,29,$$\frac{1-\cos 6\theta}{2}\cos 2\theta = \frac{1}{2}(\cos 2\theta - \frac{1}{2}(\cos 8\theta + \cos 4\theta))$$ 積和の公式
+$$\int_0^{\frac{\pi}{2}} (3\cos \theta - \cos 3\theta)(\cos \theta - \cos 3\theta) d\theta$$,$$\frac{2}{35}$$,30,$$\sin x(\cos^4 x - \cos^6 x)$$ カタマリを微分する形
+$$\int_0^{\pi} \theta \sin \theta (\cos \theta + \theta \sin \theta) d\theta$$,$$-\frac{\cos^3 \theta}{3} + \frac{\cos^5 \theta}{5} + C$$,31,$$\sin \theta(\cos^2 \theta - \cos^4 \theta)$$ カタマリを微分する形
+$$\int_0^{\frac{\pi}{4}} \frac{dx}{\sin^2 x + 3\cos^2  x}$$,$$\frac{x^2}{4} - \frac{x}{4}\sin 2x - \frac{1}{8}\cos 2x + C$$,32,$$x \cdot \frac{1-\cos 2x}{2} \rightarrow$$ 6の部分積分法
+$$\int \frac{\sin x - \cos x}{\sin x + \cos x} dx$$,$$\sqrt{3} - \frac{1}{3}$$,33,$$\frac{\sin^2 x}{\cos^4 x} = \tan^2 x \cdot \frac{1}{\cos^2  x}$$ カタマリを微分する形
+$$\int_0^{\frac{\pi}{2}} \frac{\sin \theta}{1+\cos \theta} d\theta$$,$$-\frac{x}{4}\cos 2x + \frac{1}{8}\sin 2x + C$$,34,$$x \cdot \frac{\sin 2x}{2} \rightarrow$$ 6の部分積分法
+$$\int_0^{\frac{\pi}{2}} \frac{\sin^2 \theta}{1+\cos \theta} d\theta$$,$$x\tan x + \log|\cos x| - \frac{x^2}{2} + C$$,35,$$x\left(\frac{1}{\cos^2 x} - 1\right) \rightarrow$$ 6の部分積分法
+$$\int x \cos 2x dx$$,$$\frac{1}{2}x \sin 2x + \frac{1}{4}\cos 2x + C$$,36,部分積分法 $$x \cdot \cos 2x \rightarrow$$ 積分する・微分する
+$$\int_0^{\frac{\pi}{2}} x^2 \cos x dx$$,$$\frac{\pi^2}{4} - 2$$,37,部分積分法を2回繰り返す。$$x^2 \cdot \cos x$$
+$$\int x^2 \sin \pi x dx$$,$$\left(\frac{2}{\pi^3} - \frac{x^2}{\pi}\right)\cos \pi x + \frac{2x}{\pi^2}\sin \pi x + C$$,38,部分積分法を2回繰り返す。$$x^2 \cdot \sin \pi x$$
+$$\int_0^{\pi} \sin^2 x dx$$,$$\frac{\pi}{2}$$,39,$$\sin^2 x = \frac{1-\cos 2x}{2}$$ 倍角の公式で次数を下げる
+$$\int_{\frac{\pi}{6}}^{\frac{\pi}{2}} \cos^2 x dx$$,$$\frac{\pi}{6} - \frac{\sqrt{3}}{8}$$,40,$$\cos^2 x = \frac{1+\cos 2x}{2}$$ 倍角の公式で次数を下げる
+$$\int \tan^2 x dx$$,$$\tan x - x + C$$,41,$$\tan^2 x = \frac{1}{\cos^2 x} - 1$$ の変形を利用
+$$\int_{\frac{\pi}{6}}^{\frac{\pi}{3}} \frac{d\theta}{\sin^2 \theta}$$,$$\frac{2}{\sqrt{3}}$$,42,$$\left(\frac{1}{\tan \theta}\right)' = -\frac{1}{\sin^2 \theta}$$ の公式を利用
+$$\int_0^{\frac{\pi}{3}} \frac{dx}{\cos^2 x}$$,$$\sqrt{3}$$,43,$$(\tan x)' = \frac{1}{\cos^2 x}$$ の公式を利用
+$$\int \frac{1}{\cos^2 \frac{x}{2}} dx$$,$$2\tan\frac{x}{2} + C$$,44,$$\frac{1}{\cos^2 \frac{x}{2}}$$ 1次式のカタマリとみる
+$$\int_0^{\frac{\pi}{4}} \frac{x}{\cos^2 x} dx$$,$$\frac{\pi}{4} - \frac{1}{2}\log 2$$,45,部分積分法 $$x \cdot \frac{1}{\cos^2 x} \rightarrow$$ 積分する・微分する
+$$\int \sin x \cos x dx$$,$$-\frac{1}{4}\cos 2x + C$$,46,$$\sin x \cos x = \frac{1}{2}\sin 2x$$ 倍角の公式を利用
+$$\int_0^{\pi} \sin 5x \sin 2x dx$$,$$0$$,47,$$\sin 5x \sin 2x = -\frac{1}{2}(\cos 7x - \cos 3x)$$ 積和の公式
+$$\int \frac{1}{\sin x \cos x} dx$$,$$\log|\tan x| + C$$,48,$$\frac{1}{\sin x \cos x} = \frac{1}{\tan x} \cdot \frac{1}{\cos^2 x}$$ 微分形を探す
+$$\int \frac{\tan x}{\cos x} dx$$,$$\frac{1}{\cos x} + C$$,49,$$\frac{\sin x}{\cos^2 x}$$ と変形して、カタマリを微分する形
+$$\int \sqrt{x} \log \sqrt{x} dx$$,$$\frac{1}{3}x^{\frac{3}{2}}\log x - \frac{2}{9}x^{\frac{3}{2}} + C$$,50,部分積分法 $$\frac{1}{2}\sqrt{x}\log x \rightarrow$$ 積分する・微分する
+$$\int_1^{e^2} \frac{\log x}{\sqrt{x}} dx$$,$$4$$,51,部分積分法 $$\frac{1}{\sqrt{x}}\cdot\log x \rightarrow$$ 積分する・微分する
+$$\int \sin \pi x dx$$,$$-\frac{1}{\pi}\cos \pi x + C$$,52,$$\sin \pi x$$ 1次式のカタマリとみる
+$$\int_0^{\frac{3}{2}\pi} \cos 2x dx$$,$$0$$,53,$$\cos 2x$$ 1次式のカタマリとみる
+$$\int \tan x dx$$,$$- \log|\cos x| + C$$,54,$$\tan x = \frac{\sin x}{\cos x}$$ に変形して微分形を探す
+$$\int \sin \sqrt{x} dx$$,$$-2\sqrt{x}\cos \sqrt{x} + 2\sin \sqrt{x} + C$$,55,$$t = \sqrt{x}$$ とおくと $$x = t^2 \rightarrow$$ 部分積分法へ
+$$\int \frac{1}{\sin x} dx$$,$$\frac{1}{2}\log\left|\frac{1-\cos x}{1+\cos x}\right| + C または \log\left|\tan \frac{x}{2}\right| + C$$,56,$$\frac{\sin x}{1-\cos^2 x}$$ に変形して微分形、または $$t = \tan \frac{x}{2}$$ の置換
+$$\int \frac{1}{\cos x} dx$$,$$\frac{1}{2}\log\left|\frac{1+\sin x}{1-\sin x}\right| + C$$,57,$$\frac{\cos x}{1-\sin^2 x}$$ に変形して微分形を探す
+$$\int \frac{1}{\tan x} dx$$,$$\log|\sin x| + C$$,58,$$\frac{1}{\tan x} = \frac{\cos x}{\sin x}$$ に変形して微分形を探す
+$$\int_0^{\frac{\pi}{3}} \frac{dx}{1-\sin x}$$,$$\sqrt{3}+1$$,59,$$\frac{1+\sin x}{\cos^2 x} = \frac{1}{\cos^2 x} + \frac{\sin x}{\cos^2 x}$$ に変形して微分形を探す
+$$\int \frac{dx}{1+\cos x}$$,$$\tan\frac{x}{2} + C$$,60,$$\frac{1}{2\cos^2 \frac{x}{2}}$$ 半角の公式を使って 1次式のカタマリとみる
+$$\int x \sin x dx$$,$$-x\cos x + \sin x + C$$,61,部分積分法 $$x \cdot \sin x \rightarrow$$ 積分する・微分する
+$$\int_0^1 x \sin \pi x dx$$,$$\frac{1}{\pi}$$,62,部分積分法 $$x \cdot \sin \pi x \rightarrow$$ 積分する・微分する
+$$\int (x+1) \sin x dx$$,$$-(x+1)\cos x + \sin x + C$$,63,部分積分法 $$(x+1) \cdot \sin x \rightarrow$$ 積分する・微分する
+$$\int \left(\frac{e^x+e^{-x}}{2}\right)^2 dx$$,$$\frac{1}{4}\left(\frac{1}{2}e^{2x}+2x-\frac{1}{2}e^{-2x}\right) + C$$,64,$$\left(\frac{e^x+e^{-x}}{2}\right)^2 = \frac{1}{4}(e^{2x}+2+e^{-2x})$$
+$$\int \frac{1}{1+e^x} dx$$,$$x-\log(e^x+1) + C$$,65,$$t = e^x$$ とおくと $$x = \log t$$
+$$\int \frac{1}{1+e^{-x}} dx$$,$$\log(e^x+1) + C$$,66,$$t = e^{-x}$$ とおく、または $$\frac{e^x}{e^x+1}$$ に変形
+$$\int \frac{e^{2x}-1}{e^x-1} dx$$,$$e^x+x + C$$,67,$$\frac{(e^x)^2-1}{e^x-1} = e^x+1$$ 因数分解して約分する
+$$\int \frac{e^{3x}-1}{e^x-1} dx$$,$$\frac{1}{2}e^{2x}+e^x+x + C$$,68,$$\frac{(e^x)^3-1}{e^x-1} = e^{2x}+e^x+1$$ 因数分解して約分する
+$$\int \frac{e^{3x}-1}{e^{2x}-1} dx$$,$$e^x+x-\log(e^x+1) + C$$,69,$$t = e^x$$ とおくと $$x = \log t \rightarrow$$ 部分分数分解へ
+$$\int \frac{e^x+1}{e^x-e^{-x}} dx$$,$$\frac{1}{2}\log(e^x+1)|e^x-1|^3 + C$$,70,$$t = e^x$$ とおくと $$x = \log t \rightarrow$$ 部分分数分解へ
+$$\int \frac{2e^x+1}{e^x-e^{-x}} dx$$,$$\log|e^x-1| + C$$,71,$$t = e^x$$ とおくと $$x = \log t$$
+$$\int \frac{e^x-e^{-x}}{e^x+e^{-x}} dx$$,$$\log(e^x+e^{-x}) + C$$,72,$$\frac{e^x-e^{-x}}{e^x+e^{-x}}$$ 分子が分母の微分形になっている形
+$$\int \frac{e^x}{(e^x+1)^2} dx$$,$$- \frac{1}{e^x+1} + C$$,73,$$\frac{e^x}{(e^x+1)^2}$$ カタマリを微分する形
+$$\int_0^2 e^x \sqrt{e^x} dx$$,$$\frac{2}{3}(e^3-1)$$,74,$$e^x\sqrt{e^x} = e^{\frac{3}{2}x}$$ 1次式のカタマリとみる
+$$\int \sqrt{1+e^x} dx$$,$$2\sqrt{1+e^x}+\log\frac{\sqrt{1+e^x}-1}{\sqrt{1+e^x}+1} + C$$,75,$$t = \sqrt{1+e^x}$$ とおくと $$x = \log(t^2-1) \rightarrow$$ 部分分数分解へ
+$$\int_0^1 \sqrt{1+\left(\frac{e^x-e^{-x}}{2}\right)^2} dx$$,$$\frac{1}{2}\left(e-\frac{1}{e}\right)$$,76,$$\sqrt{\frac{4+e^{2x}-2+e^{-2x}}{4}} = \frac{e^x+e^{-x}}{2}$$ の変形を利用
+$$\int \log x dx$$,$$x\log x-x + C$$,77,部分積分法 $$1 \cdot \log x \rightarrow$$ 積分する・微分する
+$$\int_1^2 \frac{x^2}{\sqrt{2x-1}} dx$$,$$\frac{6}{5}\sqrt{3} - \frac{7}{15}$$,78,$$t = \sqrt{2x-1}$$とおくと$$x = \frac{t^2+1}{2}$$
+$$\int_0^{\sqrt{3}} \frac{x}{\sqrt{x^2+1}-x} dx$$,$$\frac{7}{3} + \sqrt{3}$$,79,分母を有理化すると、$$4 \int x\sqrt{x^2+1} + x^2$$ に変形して微分形を探す
+$$\int \frac{1}{e^x} dx$$,$$-e^{-x} + C$$,80,$$\frac{1}{e^x} = e^{-x}$$ 1次式のカタマリとみる
+$$\int_0^2 x e^{-x} dx$$,$$1 - \frac{3}{e^2}$$,81,部分積分法 $$x \cdot e^{-x} \rightarrow$$ 積分する・微分する
+$$\int_0^1 x e^{-x^2} dx$$,$$\frac{1}{2}\left(1-\frac{1}{e}\right)$$,82,$$x e^{-x^2}$$ カタマリを微分する形
+$$\int_{-1}^1 (x^2+1) e^{-x} dx$$,$$2e - \frac{6}{e}$$,83,部分積分法を2回繰り返す。$$(x^2+1)e^{-x}$$
+$$\int x^3 e^x dx$$,$$(x^3-3x^2+6x-6)e^x + C$$,84,部分積分法を3回繰り返す。$$x^3 e^x$$
+$$\int \frac{x^3}{\sqrt{x^2+1}} dx$$,$$\frac{1}{3}(x^2+1)^{\frac{3}{2}} - \sqrt{x^2+1} + C$$,85,$$\frac{x^3}{\sqrt{x^2+1}} = x^2 \cdot \frac{x}{\sqrt{x^2+1}}$$ 微分形を探す
+$$\int 2^x dx$$,$$\frac{2^x}{\log 2} + C$$,86,$$2^x = e^{x \log 2}$$ 1次式のカタマリとみる
+$$\int x e^x dx$$,$$(x-1)e^x + C$$,87,部分積分法 $$x \cdot e^x \rightarrow$$ 積分する・微分する
+$$\int (x-1) e^{-x} dx$$,$$-x e^{-x} + C$$,88,部分積分法 $$(x-1)e^{-x} \rightarrow$$ 積分する・微分する
+$$\int x^2 e^{-x} dx$$,$$-(x^2+2x+2)e^{-x} + C$$,89,部分積分法を2回繰り返す。$$x^2 e^{-x}$$
+$$\int_1^2 (x^2+2x) e^{2x} dx$$,$$\frac{1}{4}(11e^4 - 3e^2)$$,90,部分積分法を2回繰り返す。$$(x^2+2x)e^{2x}$$
+$$\int x^3 e^{x^2} dx$$,$$\frac{1}{2}(x^2-1)e^{x^2} + C$$,91,$$x^3 e^{x^2} = x^2 \cdot x e^{x^2} \rightarrow$$ 部分積分法へ
+$$\int_1^2 \frac{x^2}{\sqrt{2x-1}} dx$$,$$\frac{6}{5}\sqrt{3} - \frac{7}{15}$$,92,$$t = \sqrt{2x-1}$$とおくと$$x = \frac{t^2+1}{2}$$
+$$\int_0^{\sqrt{3}} \frac{x}{\sqrt{x^2+1}-x} dx$$,$$\frac{7}{3} + \sqrt{3}$$,93,分母を有理化すると、$$4 \int x\sqrt{x^2+1} + x^2$$ に変形して微分形を探す
+$$\int \frac{1}{e^x} dx$$,$$-e^{-x} + C$$,94,$$\frac{1}{e^x} = e^{-x}$$ 1次式のカタマリとみる
+$$\int_0^2 x e^{-x} dx$$,$$1 - \frac{3}{e^2}$$,95,部分積分法 $$x \cdot e^{-x} \rightarrow$$ 積分する・微分する
+$$\int_0^1 x e^{-x^2} dx$$,$$\frac{1}{2}\left(1-\frac{1}{e}\right)$$,96,$$x e^{-x^2}$$ カタマリを微分する形
+$$\int_{-1}^1 (x^2+1) e^{-x} dx$$,$$2e - \frac{6}{e}$$,97,部分積分法を2回繰り返す。$$(x^2+1)e^{-x}$$
+$$\int x^3 e^x dx$$,$$(x^3-3x^2+6x-6)e^x + C$$,98,部分積分法を3回繰り返す。$$x^3 e^x$$
+$$\int \frac{x^3}{\sqrt{x^2+1}} dx$$,$$\frac{1}{3}(x^2+1)^{\frac{3}{2}} - \sqrt{x^2+1} + C$$,99,$$\frac{x^3}{\sqrt{x^2+1}} = x^2 \cdot \frac{x}{\sqrt{x^2+1}}$$ 微分形を探す
+$$\int 2^x dx$$,$$\frac{2^x}{\log 2} + C$$,100,$$2^x = e^{x \log 2}$$ 1次式のカタマリとみる
+$$\int x e^x dx$$,$$(x-1)e^x + C$$,101,部分積分法 $$x \cdot e^x \rightarrow$$ 積分する・微分する
+$$\int (x-1) e^{-x} dx$$,$$-x e^{-x} + C$$,102,部分積分法 $$(x-1)e^{-x} \rightarrow$$ 積分する・微分する
+$$\int x^2 e^{-x} dx$$,$$-(x^2+2x+2)e^{-x} + C$$,103,部分積分法を2回繰り返す。$$x^2 e^{-x}$$
+$$\int_1^2 (x^2+2x) e^{2x} dx$$,$$\frac{1}{4}(11e^4 - 3e^2)$$,104,部分積分法を2回繰り返す。$$(x^2+2x)e^{2x}$$
+$$\int x^3 e^{x^2} dx$$,$$\frac{1}{2}(x^2-1)e^{x^2} + C$$,105,$$x^3 e^{x^2} = x^2 \cdot x e^{x^2} \rightarrow$$ 部分積分法へ
+$$\int_1^2 \frac{x^2}{\sqrt{2x-1}} dx$$,$$\frac{6}{5}\sqrt{3} - \frac{7}{15}$$,106,$$t = \sqrt{2x-1}$$とおくと$$x = \frac{t^2+1}{2}$$
+$$\int_0^{\sqrt{3}} \frac{x}{\sqrt{x^2+1}-x} dx$$,$$\frac{7}{3} + \sqrt{3}$$,107,分母を有理化すると、$$4 \int x\sqrt{x^2+1} + x^2$$ に変形して微分形を探す
+$$\int \frac{1}{e^x} dx$$,$$-e^{-x} + C$$,108,$$\frac{1}{e^x} = e^{-x}$$ 1次式のカタマリとみる
+$$\int_0^2 x e^{-x} dx$$,$$1 - \frac{3}{e^2}$$,109,部分積分法 $$x \cdot e^{-x} \rightarrow$$ 積分する・微分する
+$$\int_0^1 x e^{-x^2} dx$$,$$\frac{1}{2}\left(1-\frac{1}{e}\right)$$,110,$$x e^{-x^2}$$ カタマリを微分する形
+$$\int_{-1}^1 (x^2+1) e^{-x} dx$$,$$2e - \frac{6}{e}$$,111,部分積分法を2回繰り返す。$$(x^2+1)e^{-x}$$
+$$\int x^3 e^x dx$$,$$(x^3-3x^2+6x-6)e^x + C$$,112,部分積分法を3回繰り返す。$$x^3 e^x$$
+$$\int \frac{x^3}{\sqrt{x^2+1}} dx$$,$$\frac{1}{3}(x^2+1)^{\frac{3}{2}} - \sqrt{x^2+1} + C$$,113,$$\frac{x^3}{\sqrt{x^2+1}} = x^2 \cdot \frac{x}{\sqrt{x^2+1}}$$ 微分形を探す
+$$\int 2^x dx$$,$$\frac{2^x}{\log 2} + C$$,114,$$2^x = e^{x \log 2}$$ 1次式のカタマリとみる
+$$\int x e^x dx$$,$$(x-1)e^x + C$$,115,部分積分法 $$x \cdot e^x \rightarrow$$ 積分する・微分する
+$$\int (x-1) e^{-x} dx$$,$$-x e^{-x} + C$$,116,部分積分法 $$(x-1)e^{-x} \rightarrow$$ 積分する・微分する
+$$\int x^2 e^{-x} dx$$,$$-(x^2+2x+2)e^{-x} + C$$,117,部分積分法を2回繰り返す。$$x^2 e^{-x}$$
+$$\int_1^2 (x^2+2x) e^{2x} dx$$,$$\frac{1}{4}(11e^4 - 3e^2)$$,118,部分積分法を2回繰り返す。$$(x^2+2x)e^{2x}$$
+$$\int x^3 e^{x^2} dx$$,$$\frac{1}{2}(x^2-1)e^{x^2} + C$$,119,$$x^3 e^{x^2} = x^2 \cdot x e^{x^2} \rightarrow$$ 部分積分法へ
+$$\int_1^2 \frac{x^2}{\sqrt{2x-1}} dx$$,$$\frac{6}{5}\sqrt{3} - \frac{7}{15}$$,120,$$t = \sqrt{2x-1}$$とおくと$$x = \frac{t^2+1}{2}$$
+$$\int_0^{\sqrt{3}} \frac{x}{\sqrt{x^2+1}-x} dx$$,$$\frac{7}{3} + \sqrt{3}$$,121,分母を有理化すると、$$4 \int x\sqrt{x^2+1} + x^2$$ に変形して微分形を探す
+$$\int \frac{1}{e^x} dx$$,$$-e^{-x} + C$$,122,$$\frac{1}{e^x} = e^{-x}$$ 1次式のカタマリとみる
+$$\int_0^2 x e^{-x} dx$$,$$1 - \frac{3}{e^2}$$,123,部分積分法 $$x \cdot e^{-x} \rightarrow$$ 積分する・微分する
+$$\int_0^1 x e^{-x^2} dx$$,$$\frac{1}{2}\left(1-\frac{1}{e}\right)$$,124,$$x e^{-x^2}$$ カタマリを微分する形
+$$\int_{-1}^1 (x^2+1) e^{-x} dx$$,$$2e - \frac{6}{e}$$,125,部分積分法を2回繰り返す。$$(x^2+1)e^{-x}$$
+$$\int x^3 e^x dx$$,$$(x^3-3x^2+6x-6)e^x + C$$,126,部分積分法を3回繰り返す。$$x^3 e^x$$
+$$\int \frac{x^3}{\sqrt{x^2+1}} dx$$,$$\frac{1}{3}(x^2+1)^{\frac{3}{2}} - \sqrt{x^2+1} + C$$,127,$$\frac{x^3}{\sqrt{x^2+1}} = x^2 \cdot \frac{x}{\sqrt{x^2+1}}$$ 微分形を探す
+$$\int 2^x dx$$,$$\frac{2^x}{\log 2} + C$$,128,$$2^x = e^{x \log 2}$$ 1次式のカタマリとみる
+$$\int x e^x dx$$,$$(x-1)e^x + C$$,129,部分積分法 $$x \cdot e^x \rightarrow$$ 積分する・微分する
+$$\int (x-1) e^{-x} dx$$,$$-x e^{-x} + C$$,130,部分積分法 $$(x-1)e^{-x} \rightarrow$$ 積分する・微分する
+$$\int x^2 e^{-x} dx$$,$$-(x^2+2x+2)e^{-x} + C$$,131,部分積分法を2回繰り返す。$$x^2 e^{-x}$$
+$$\int_1^2 (x^2+2x) e^{2x} dx$$,$$\frac{1}{4}(11e^4 - 3e^2)$$,132,部分積分法を2回繰り返す。$$(x^2+2x)e^{2x}$$
+$$\int x^3 e^{x^2} dx$$,$$\frac{1}{2}(x^2-1)e^{x^2} + C$$,133,$$x^3 e^{x^2} = x^2 \cdot x e^{x^2} \rightarrow$$ 部分積分法へ
